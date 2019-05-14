@@ -33,7 +33,7 @@ class TelaInicial{
 		this.exibeObj5();
 	}
 
-	// Nestes métodos subistituir APENAS o fill e ellipse pela imagem ou inserir um texto.
+	// Nestes métodos substituir APENAS o fill e ellipse pela imagem ou inserir um texto.
 	// NÃO MEXA NOS IF ELSE.
 	exibeObj1(){
 		if(this.taEmCima1){

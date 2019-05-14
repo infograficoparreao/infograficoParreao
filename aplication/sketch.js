@@ -22,8 +22,8 @@ function draw(){
 
 	// ###### COMO UTILIZAR: ###### //
 	
-	// Aqui você irá instranciar os objetos para criar as telas/cartas uma por uma,
-	// creio que para esse CP serão só 3 cartas, você decidee quais.
+	// Aqui você irá instanciar os objetos para criar as telas/cartas uma por uma,
+	// creio que para esse CP serão só 3 cartas, você decide quais.
 	// Os cartões eu não cheguei a deixar automatizado pois não compreendi como será o layout,
 	// Então se possível, configure todo o layout desse cartão base para que eu possa automatizar o processo.
 
@@ -31,5 +31,5 @@ function draw(){
 
 
 	// Basta alterar o nome que vem antes de ".exibir();" para visualizar a tela desejada.
-	telaInicial.exibir();
+	telaSpash.exibir();
 }

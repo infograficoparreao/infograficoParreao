@@ -4,7 +4,7 @@ class TelaSpash{
 		this.raio = width/6;
 		this.posY = height/2;
 		this.posX = width/4;
-	}
+	}e
 
 	exibir(){
 
