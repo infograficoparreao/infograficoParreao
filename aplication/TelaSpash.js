@@ -20,13 +20,19 @@ class TelaSpash{
 		// image("LogoSMD.etc", 2 * this.posX, this.posY, this.raio, this.raio);
 		// image("LogoParreão.etc", 3 * this.posX, this.posY, this.raio, this.raio);
 
-		fill(255, 0, 0);
-		ellipse(this.posX,  this.posY, this.raio, this.raio);
+/*		fill(255, 0, 0);
+		ellipse(this.posX,  this.posY, this.raio, this.raio);*/
+		imageMode(CENTER); // SALVADOR
+		image(logoUfc, this.posX, this.posY, this.raio, this.raio*(101/225));
 
-		fill(0, 255, 0);
-		ellipse(2 * this.posX,  this.posY, this.raio, this.raio);
+		// fill(0, 255, 0);
+		// ellipse(2 * this.posX,  this.posY, this.raio, this.raio);
 
-		fill(0, 0, 255);
-		ellipse(3 * this.posX, this.posY, this.raio, this.raio);
+		image(logoSMD, 2 * this.posX, this.posY, this.raio, this.raio*(107/139));
+
+		// fill(0, 0, 255);
+		// ellipse(3 * this.posX, this.posY, this.raio, this.raio);
+
+		image(logoParque, 3 * this.posX, this.posY, this.raio, this.raio*(624/646));
 	}
 }

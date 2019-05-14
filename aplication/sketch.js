@@ -5,11 +5,17 @@ let telaMapa;
 let telaBiodiversidade;
 let cartaoAnimal;
 
+function preload() {
+	logoUfc = loadImage('imagens/logos/logo-ufc.png');
+	logoSMD = loadImage('imagens/logos/logo-smd.png');
+	logoParque = loadImage('imagens/logos/logo-parque.png');
+	logoEquipe = loadImage('imagens/logos/logo-libertinos.png');
+}
+
 function setup(){
 	createCanvas(windowWidth, windowHeight);
 	textAlign(CENTER, CENTER);
 	rectMode(CENTER);
-
 	telaSpash = new TelaSpash();
 	telaSpash2 = new TelaSpash2();
 	telaInicial = new TelaInicial();
@@ -31,5 +37,5 @@ function draw(){
 
 
 	// Basta alterar o nome que vem antes de ".exibir();" para visualizar a tela desejada.
-	telaSpash.exibir();
+	telaSpash2.exibir();
 }

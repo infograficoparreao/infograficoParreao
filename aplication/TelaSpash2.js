@@ -13,7 +13,10 @@ class TelaSpash2{
 		// Ao carregar as alterações aqui, remova as linhas de fill e rect, e descomente as seguintes:
 		// image("LogoLibertinos.etc", this.posX, this.posY, this.diam, this.diam);
 
-		fill(0);
-		rect(this.posX, this.posY, this.diam, this.diam);
+		imageMode(CENTER);
+		image(logoEquipe, this.posX, this.posY, this.diam, this.diam);
+
+		// fill(0);
+		// rect(this.posX, this.posY, this.diam, this.diam);
 	}
 }
