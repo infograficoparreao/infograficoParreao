@@ -32,10 +32,13 @@ class Biodiversidade{
 		fill(255, 0, 0);
 
 		// Subistituir os rects pelas imagens que desejar que represente cada categoria.
-		rect(this.posX, this.posY * 1.1, this.largura, this.altura);
 
-		rect(3 * this.posX, this.posY * 1.1, this.largura, this.altura);
+		imageMode(CENTER);
 
-		rect(5 * this.posX, this.posY * 1.1, this.largura, this.altura);
+		image(iconeRepteis, this.posX, this.posY * 1.1, this.largura, this.largura);
+
+		image(iconeAves, 3 * this.posX, this.posY * 1.1, this.largura, this.largura);
+
+		image(iconeAnfibios, 5 * this.posX, this.posY * 1.1, this.largura, this.largura);
 	}
 }

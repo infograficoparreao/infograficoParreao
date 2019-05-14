@@ -18,7 +18,10 @@ function preload() {
 	iconePassaro = loadImage('imagens/icones/icone-passaro.png');
 	iconeGMaps = loadImage('imagens/icones/icone-gmaps.png');
 	iconePreserv = loadImage('imagens/icones/icone-preservacao.png');
-
+	// Ícones Biodiversidade
+	iconeRepteis = loadImage('imagens/icones/icone-repteis.png');
+	iconeAves = loadImage('imagens/icones/icone-aves.png');
+	iconeAnfibios = loadImage('imagens/icones/icone-anfibios.png');
 }
 
 function setup(){

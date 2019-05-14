@@ -91,7 +91,7 @@ class TelaInicial{
 		}
 
 		imageMode(CENTER);
-		image(iconePreserv, 2 * this.posX + (this.diam + this.diam/4), 2 * this.posY, this.diamObj5, this.diamObj5)
+		image(iconePreserv, 2 * this.posX + (this.diam + this.diam/4), 2 * this.posY, this.diamObj5, this.diamObj5);
 	}
 
 
