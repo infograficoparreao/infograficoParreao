@@ -12,7 +12,8 @@ class TelaSpash{
 
 		fill(0);
 		textSize(50);
-		text('Apoio:', 2 * this.posX, this.posY/2);
+		textFont(fonteTitulo);
+		text('APOIO:', 2 * this.posX, this.posY/2);
 
 		// ATENÇÃO:
 		// Ao carregar as alterações aqui, remova as linhas de fill e ellipse, e descomente as seguintes:

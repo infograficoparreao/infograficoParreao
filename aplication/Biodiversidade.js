@@ -15,6 +15,7 @@ class Biodiversidade{
 
 		// Testos da Tela:
 		fill(0);
+		textFont(fonteTitulo);
 		textSize(50);
 		text('Biodiversidade', 3 * this.posX, this.posY/8);
 
