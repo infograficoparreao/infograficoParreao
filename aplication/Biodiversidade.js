@@ -1,15 +1,15 @@
 class Biodiversidade{
 
-	// ############### NÃO MEXER ############### //
-	constructor(){
+	constructor(imagemRepteis, imagemAves, imagemAnfibios){
 		this.largura = width/5;
 		this.altura = 3 * (height/5);
 		this.posX = width/6;
 		this.posY = height/2;
+
+		this.repteis = new Objetos(imagemRepteis, this.posX, this.posY * 1.1, this.largura, this.largura);
+		this.aves = new Objetos(imagemAves, 3 * this.posX, this.posY * 1.1, this.largura, this.largura);
+		this.anfibios = new Objetos(imagemAnfibios, 5 * this.posX, this.posY * 1.1, this.largura, this.largura);
 	}
-	// ############### NÃO MEXER ############### //
-
-
 
 	exibir(){
 
@@ -28,17 +28,20 @@ class Biodiversidade{
 		textSize(35);
 		text('Anfíbios', 5 * this.posX, this.posY/3);
 
+		this.repteis.interacaoHoverEllipse();
+		this.repteis.exibir();
 
-		fill(255, 0, 0);
+		this.aves.interacaoHoverEllipse();
+		this.aves.exibir();
 
-		// Subistituir os rects pelas imagens que desejar que represente cada categoria.
+		this.anfibios.interacaoHoverEllipse();
+		this.anfibios.exibir();
 
-		imageMode(CENTER);
-
-		image(iconeRepteis, this.posX, this.posY * 1.1, this.largura, this.largura);
-
-		image(iconeAves, 3 * this.posX, this.posY * 1.1, this.largura, this.largura);
-
-		image(iconeAnfibios, 5 * this.posX, this.posY * 1.1, this.largura, this.largura);
+		if(this.repteis.hover || this.aves.hover || this.anfibios.hover){
+			cursor(HAND);
+		}
+		else{
+			cursor(ARROW);
+		}
 	}
 }
