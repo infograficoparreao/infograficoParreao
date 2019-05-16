@@ -1,6 +1,8 @@
 function preload() {
-
+	//Fontes
 	fonteTitulo = loadFont('fontes/tw-cen-mt.ttf');
+	fonteConteudo = loadFont('fontes/century-gothic.ttf');
+	fonteConteudoBold = loadFont('fontes/century-gothic-bold.otf');
 
 	// Logos
 	logoUfc = loadImage('imagens/logos/logo-ufc.png');
@@ -23,4 +25,7 @@ function preload() {
 	//Ícones Básicos Globais (Temporário)
 	iconeVoltar = loadImage('imagens/icones/icone-voltar.png');
 	iconeConstrucao = loadImage('imagens/icones/icone-construcao.png');
+	
+	//Fotos
+	galoCampina = loadImage('imagens/fotos/galo-campina.jpg');
 }

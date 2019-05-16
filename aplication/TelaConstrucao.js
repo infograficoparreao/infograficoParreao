@@ -1,6 +1,7 @@
 class TelaConstrucao {
 	
 	constructor(img, imagemVoltar) {
+		// coordenadas usadas para o posicionamento do botão voltar. iguais à tela de Biodiversidade.
 		this.largura = width/5;
 		this.posX = width/6;
 		this.posY = height/2;
