@@ -2,7 +2,7 @@ class TelaMapa{
 
 // ############################## NÃO MEXER NESSA TELA ######################## //
 
-	constructor(){
+	constructor(imagemVoltar){
 		this.tam = width/8;
 
 		this.posX = width/2;
@@ -15,6 +15,8 @@ class TelaMapa{
 		this.taEmCima1 = false;
 		this.taEmCima2 = false;
 		this.taEmCima3 = false;
+
+		this.voltar = new Objetos(imagemVoltar, this.posX/4, height - this.posY/4, this.tam/3, this.tam/3);
 	}
 
 	exibir(){
@@ -27,6 +29,10 @@ class TelaMapa{
 		this.exibeObj1();
 		this.exibeObj2();
 		this.exibeObj3();
+
+		this.voltar.interacaoClicarMudarTela(EstadoTelaInicial);
+		this.voltar.interacaoHoverEllipse();
+		this.voltar.exibir();
 	}
 
 	interacao(){

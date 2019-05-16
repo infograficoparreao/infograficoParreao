@@ -14,7 +14,7 @@ function setup(){
 	telaSpash = new TelaSpash(logoUfc, logoSMD, logoParque);
 	telaSpash2 = new TelaSpash2(logoEquipe);
 	telaInicial = new TelaInicial(iconeMapa, iconeContato, iconePassaro, iconeGMaps, iconePreserv);
-	telaMapa = new TelaMapa();
-	telaBiodiversidade = new Biodiversidade(iconeRepteis, iconeAves, iconeAnfibios);
+	telaMapa = new TelaMapa(iconeVoltar);
+	telaBiodiversidade = new Biodiversidade(iconeRepteis, iconeAves, iconeAnfibios, iconeVoltar);
 	cartaoAnimal = new CartaoAnimal();
 }

@@ -12,16 +12,40 @@ class Objetos{
 		this.raioL = this.raioLBase;
 	}
 
-	interacaoHoverEllipse(){
+	hoverMouse(){
 		if(dist(mouseX, mouseY, this.posX, this.posY) <= this.raioABase/2){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+	interacaoHoverEllipse(){
+		if(this.hoverMouse()){
 			this.raioA = this.raioABase + 15;
 			this.raioL = this.raioLBase + 15;
 			this.hover = true;
-		}
-		else{
+		}else{
 			this.raioA = this.raioABase;
 			this.raioL = this.raioLBase;
 			this.hover = false;
+		}
+	}
+
+	interacaoClicarMudarTela(tela){
+		if(this.hoverMouse()){
+			if(mouseIsPressed){
+				TELA = tela;
+			}
+		}
+	}
+
+	interacaoClicarMaps(){
+		if(this.hoverMouse()){
+			if(mouseIsPressed){
+				window.open("https://goo.gl/maps/FjgJCgvgiX7TpC7H9");
+			}
 		}
 	}
 

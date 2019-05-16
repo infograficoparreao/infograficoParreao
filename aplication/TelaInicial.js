@@ -13,15 +13,18 @@ class TelaInicial{
 	}
 
 	exibir(){
+		this.botaoMapa.interacaoClicarMudarTela(EstadoTelaMapa);
 		this.botaoMapa.interacaoHoverEllipse();
 		this.botaoMapa.exibir();
 
 		this.botaoContato.interacaoHoverEllipse();
 		this.botaoContato.exibir();
 
+		this.botaoPassaro.interacaoClicarMudarTela(EstadoTelaBiodiversidade);
 		this.botaoPassaro.interacaoHoverEllipse();
 		this.botaoPassaro.exibir();
 
+		this.botaoGMaps.interacaoClicarMaps();
 		this.botaoGMaps.interacaoHoverEllipse();
 		this.botaoGMaps.exibir();
 

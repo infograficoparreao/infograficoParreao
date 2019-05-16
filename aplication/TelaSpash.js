@@ -12,8 +12,6 @@ class TelaSpash{
 	}
 
 	exibir(){
-		background(255);
-
 		fill(0);
 		textSize(50);
 		textFont(fonteTitulo);
