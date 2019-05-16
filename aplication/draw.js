@@ -52,7 +52,7 @@ function maquinaEstadoTelas(){
 			telaConstrucao.exibir();
 			break;
 		case EstadoTelaPreservacao:
-			telaConstrucao.exibir();
+			cartaoAnimal.exibirPreserv();
 			break;
 	}
 }

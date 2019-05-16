@@ -20,7 +20,7 @@ class TelaMapa{
 	}
 
 	exibir(){
-		background(255);
+		background(240);
 
 		noStroke();
 		fill(0, 255, 0);

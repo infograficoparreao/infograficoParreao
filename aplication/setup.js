@@ -18,5 +18,5 @@ function setup(){
 	telaMapa = new TelaMapa(iconeVoltar);
 	telaBiodiversidade = new Biodiversidade(iconeRepteis, iconeAves, iconeAnfibios, iconeVoltar);
 	telaConstrucao = new TelaConstrucao(iconeConstrucao, iconeVoltar);
-	cartaoAnimal = new CartaoAnimal();
+	cartaoAnimal = new CartaoAnimal(iconeVoltar);
 }

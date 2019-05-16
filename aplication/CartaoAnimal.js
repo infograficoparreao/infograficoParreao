@@ -2,11 +2,15 @@ class CartaoAnimal {
 
 	// ############### NÃO MEXER ############### //
 	// A não ser que seja muito importante redimensionar o cartão.
-	constructor(){
+	constructor(imagemVoltar){
 		this.largura = width/3;
 		this.altura = height * 0.9;
 		this.posX = width/2;
 		this.posY = height/2;
+
+		// coordenadas usadas para o posicionamento do botão voltar. iguais à tela de Biodiversidade.
+		this.largura_voltar = width/5;
+		this.voltar = new Objetos(imagemVoltar, this.largura_voltar/4, height - this.largura_voltar/4, this.largura_voltar/4, this.largura_voltar/4);
 	}
 	// ############### NÃO MEXER ############### //
 
@@ -208,6 +212,10 @@ class CartaoAnimal {
 	}
 
 	exibirPreserv(){
+		//Botão voltar
+		this.voltar.interacaoClicarMudarTela(EstadoTelaInicial);
+		this.voltar.interacaoHoverEllipse();
+		this.voltar.exibir();
 		//Fundo
 		noStroke();
 		fill('#BF2121');
