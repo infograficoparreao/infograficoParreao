@@ -17,7 +17,7 @@ var EstadoTelaPreservacao = 5;
 
 function draw(){
 	background(240);
-	cartaoAnimal.exibirAve();
+	cartaoAnimal.exibirPreserv();
 //	maquinaEstadoTelas();
 }
 

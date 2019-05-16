@@ -28,4 +28,7 @@ function preload() {
 	
 	//Fotos
 	galoCampina = loadImage('imagens/fotos/galo-campina.jpg');
+	iguana = loadImage('imagens/fotos/iguana.jpg');
+	sapoBoi = loadImage('imagens/fotos/sapo-boi.jpg');
+	gato = loadImage('imagens/fotos/gato.jpg');
 }
