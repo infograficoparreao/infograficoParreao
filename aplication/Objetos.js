@@ -1,4 +1,4 @@
-class Objetos{
+class Objetos {
 	constructor(img, x, y, a, l){
 		this.imagem = img;
 		this.raioABase = a;

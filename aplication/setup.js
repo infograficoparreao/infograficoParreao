@@ -3,6 +3,7 @@ let telaSpash2;
 let telaInicial;
 let telaMapa;
 let telaBiodiversidade;
+let telaConstrucao;
 let cartaoAnimal;
 
 function setup(){
@@ -16,5 +17,6 @@ function setup(){
 	telaInicial = new TelaInicial(iconeMapa, iconeContato, iconePassaro, iconeGMaps, iconePreserv);
 	telaMapa = new TelaMapa(iconeVoltar);
 	telaBiodiversidade = new Biodiversidade(iconeRepteis, iconeAves, iconeAnfibios, iconeVoltar);
+	telaConstrucao = new TelaConstrucao(iconeConstrucao, iconeVoltar);
 	cartaoAnimal = new CartaoAnimal();
 }

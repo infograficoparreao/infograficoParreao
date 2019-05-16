@@ -23,6 +23,5 @@ class CartaoAnimal{
 		fill(0);
 		textSize(45);
 		text('Nome do Animal', this.posX, this.posY * 0.3); // Título da Carta OU Nome do Animal.
-
 	}
 }

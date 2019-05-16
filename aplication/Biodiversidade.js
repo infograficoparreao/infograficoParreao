@@ -13,7 +13,7 @@ class Biodiversidade{
 
 	exibir(){
 
-		// Testos da Tela:
+		// Textos da Tela:
 		fill(0);
 		textFont(fonteTitulo);
 		textSize(50);

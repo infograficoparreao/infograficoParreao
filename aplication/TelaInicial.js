@@ -17,6 +17,7 @@ class TelaInicial{
 		this.botaoMapa.interacaoHoverEllipse();
 		this.botaoMapa.exibir();
 
+		this.botaoContato.interacaoClicarMudarTela(EstadoTelaContato);
 		this.botaoContato.interacaoHoverEllipse();
 		this.botaoContato.exibir();
 
@@ -28,6 +29,7 @@ class TelaInicial{
 		this.botaoGMaps.interacaoHoverEllipse();
 		this.botaoGMaps.exibir();
 
+		this.botaoPreserv.interacaoClicarMudarTela(EstadoTelaPreservacao);
 		this.botaoPreserv.interacaoHoverEllipse();
 		this.botaoPreserv.exibir();
 

@@ -22,4 +22,5 @@ function preload() {
 
 	//Ícones Básicos Globais (Temporário)
 	iconeVoltar = loadImage('imagens/icones/icone-voltar.png');
+	iconeConstrucao = loadImage('imagens/icones/icone-construcao.png');
 }
