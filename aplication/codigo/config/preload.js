@@ -34,6 +34,12 @@ function preload() {
 
 	//Mapa
 	mapa = loadImage('imagens/mapa.png');
+
+	// Fundos dos cartões
+	fundoPassaro = loadImage('imagens/fundos/fundo-passaro.png');
+	fundoIguana = loadImage('imagens/fundos/fundo-iguana.png');
+	fundoGato = loadImage('imagens/fundos/fundo-gato.png');
+	fundoSapo = loadImage('imagens/fundos/fundo-sapo.png');
 }
 
 // Declaração de strings de texto para os cartões
@@ -51,5 +57,5 @@ let texto2_sapo='É um animal fértil devido ao grande número de ovos postos pe
 let texto3_sapo='O sapo-cururu possui grandes glândulas de veneno. Tanto os adultos como os girinos são altamente tóxicos quando ingeridos.'
 // Gatos
 let texto1_gato='Os gatos hoje fazem parte da segunda maior causa de perda de biodiversidade do planeta.';
-let texto2_gato='Nós, humanos, somos os maiores responsáveis, por conta do abandono constante de gatos nas ruas.';
+let texto2_gato='Nós, humanos, somos os maiores responsáveis por conta do abandono constante de gatos nas ruas.';
 let texto3_gato='Cada gato, no sistema urbano, preda uma média de cinco animais silvestres por mês.';

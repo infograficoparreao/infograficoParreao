@@ -19,7 +19,6 @@ var alpha = 0;
 
 function draw(){
 	background(240);
-
 	maquinaEstadoTelas();
 	maquinaEstadoCartao();
 }

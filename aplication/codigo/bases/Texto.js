@@ -11,13 +11,13 @@ class Texto{
 	}
 
 	exibir(){
-		noStroke();
+		//noStroke();
 
 		textSize(this.size);
 		textFont(this.fonte);
 
 		fill(this.cor);
-		text(this.string, this.posX, this.posY, this.containerX * 0.78, this.containerY * 0.088);
+		text(this.string, this.posX, this.posY, this.containerX * 0.8, this.containerY * 0.09);
 	}
 
 

@@ -1,6 +1,6 @@
 class CartaoAnimal {
 
-	constructor(imagemVoltar, corFundo, imagemCard, textoTitulo, textoLinha1, textoLinha2, textoLinha3){
+	constructor(imagemVoltar, corFundo, imagemCard, imgFundoCard, textoTitulo, textoLinha1, textoLinha2, textoLinha3){
 
 		//Variáveis de posicionamento
 		this.altura = height * 0.8;
@@ -11,10 +11,12 @@ class CartaoAnimal {
 		//Variáveis de design
 		this.corFundo = color(corFundo);
 		this.img = imagemCard;
+		this.imgFundo = imgFundoCard;
 		this.Imagem = new Objetos(this.img, this.posX, this.posY * 0.78, this.largura * 0.9, this.largura * 0.9 * 3/4);
+		this.fundo = new Objetos(this.imgFundo, this.posX, this.posY, this.largura, this.altura)
 
 		//Variaveis de informação
-		this.Titulo = new Texto(textoTitulo, this.posX, (this.posY - this.altura/2) * 1.4, 0, 30, fonteTitulo);
+		this.Titulo = new Texto(textoTitulo, this.posX, (this.posY - this.altura/2) * 1.4, 255, 30, fonteTitulo);
 		this.Linha1 = new Texto(textoLinha1, this.posX * 1.04, (this.posY + this.altura/2) * 0.71, 0, 12, fonteConteudo);
 		this.Linha2 = new Texto(textoLinha2, this.posX * 1.04, (this.posY + this.altura/2) * 0.82, 0, 12, fonteConteudo);
 		this.Linha3 = new Texto(textoLinha3, this.posX * 1.04, (this.posY + this.altura/2) * 0.93, 0, 12, fonteConteudo);
@@ -26,16 +28,19 @@ class CartaoAnimal {
 
 	exibir(){
 		//Fundo
-		noStroke();
-		fill(this.corFundo);
-		rect(this.posX, this.posY, this.largura, this.altura); 
+		this.fundo.exibir();
 
 		//Título
 		stroke(255, 255, 255, 75);
 		strokeWeight(3);
 		noFill();
 		rect(this.posX, (this.posY - this.altura/2) * 1.4, this.largura * 0.9, this.altura * 0.08);
+
+		// Configurações título
+		stroke(0, 128);
+		strokeWeight(3);
 		this.Titulo.exibir();
+		noStroke();
 
 		//Imagem
 		this.Imagem.exibir();
