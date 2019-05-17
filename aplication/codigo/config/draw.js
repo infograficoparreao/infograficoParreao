@@ -26,6 +26,15 @@ function draw(){
 function maquinaEstadoTelas(){
 	switch(TELA){
 		case EstadoSplashs:
+
+			noStroke();
+			fill(87, 204, 242, 40);
+			rect(width/2, height * 0.9, width * 0.2, height * 0.05, 10);
+			fill(0);
+			textFont(fonteConteudo);
+			textSize(15);
+			text("Carregando...", width/2,  height * 0.9);
+
 			if(tempoSplash <= 180){
 				telaSpash.exibir();
 			} else if(tempoSplash > 180 && tempoSplash <= 225){
