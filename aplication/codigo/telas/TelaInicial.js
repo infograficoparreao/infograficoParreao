@@ -12,7 +12,7 @@ class TelaInicial{
 
 	exibir(){
 
-		this.botaoPassaro.interacaoClicarMudarTela(EstadoTelaBiodiversidade);
+		this.botaoPassaro.interacaoClicarMudarTela(EstadoTelaCategorias);
 		this.botaoPassaro.interacaoHoverEllipse();
 		this.botaoPassaro.exibir();
 

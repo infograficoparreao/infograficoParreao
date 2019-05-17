@@ -1,18 +1,12 @@
-//Itens que deverão ser alterados para a transição:
-// telaSpash
-// telaSpash2
-// telaInicial
-
 var tempoSplash = 0; // temporizador
 
 var TELA = 0; // estado inicial
 
 var EstadoSplashs = 0;
 var EstadoTelaInicial = 1;
-var EstadoTelaBiodiversidade = 2;
-var EstadoTelaMapa = 3;
-var EstadoTelaContato = 4;
-var EstadoTelaPreservacao = 5;
+var EstadoTelaCategorias = 2;
+var EstadoTelaContato = 3;
+var EstadoTelaPreservacao = 4;
 
 var alpha = 255;
 
@@ -42,11 +36,8 @@ function maquinaEstadoTelas(){
 		case EstadoTelaInicial:
 			telaInicial.exibir();
 			break;
-		case EstadoTelaBiodiversidade:
-			telaBiodiversidade.exibir();
-			break;
-		case EstadoTelaMapa:
-			telaMapa.exibir();
+		case EstadoTelaCategorias:
+			telaCategorias.exibir();
 			break;
 		case EstadoTelaContato:
 			telaConstrucao.exibir();

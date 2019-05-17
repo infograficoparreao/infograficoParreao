@@ -1,4 +1,4 @@
-class Biodiversidade{
+class Categorias{
 
 	constructor(imagemRepteis, imagemAves, imagemAnfibios, imagemVoltar){
 		this.largura = width/5;
