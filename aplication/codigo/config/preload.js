@@ -31,4 +31,7 @@ function preload() {
 	iguana = loadImage('imagens/fotos/iguana.jpg');
 	sapoBoi = loadImage('imagens/fotos/sapo-boi.jpg');
 	gato = loadImage('imagens/fotos/gato.jpg');
+
+	//Mapa
+	mapa = loadImage('imagens/mapa.png');
 }
