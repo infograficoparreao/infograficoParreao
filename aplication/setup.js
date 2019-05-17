@@ -14,9 +14,9 @@ function setup(){
 
 	telaSpash = new TelaSpash(logoUfc, logoSMD, logoParque);
 	telaSpash2 = new TelaSpash2(logoEquipe);
-	telaInicial = new TelaInicial(iconeMapa, iconeContato, iconePassaro, iconeGMaps, iconePreserv);
+	telaInicial = new TelaInicial(iconeContato, iconePassaro, iconeGMaps);
 	telaMapa = new TelaMapa(iconeVoltar);
 	telaBiodiversidade = new Biodiversidade(iconeRepteis, iconeAves, iconeAnfibios, iconeVoltar);
 	telaConstrucao = new TelaConstrucao(iconeConstrucao, iconeVoltar);
-	cartaoAnimal = new CartaoAnimal(iconeVoltar);
+	cartaoAnimal = new CartaoAnimal(iconeVoltar, '#57CCF2', galoCampina, 'Título', 'Linha 1', 'Linha 2', 'Linha 3');
 }
