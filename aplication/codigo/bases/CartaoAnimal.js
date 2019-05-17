@@ -15,9 +15,9 @@ class CartaoAnimal {
 
 		//Variaveis de informação
 		this.Titulo = new Texto(textoTitulo, this.posX, (this.posY - this.altura/2) * 1.4, 0, 30, fonteTitulo);
-		this.Linha1 = new Texto(textoLinha1, this.posX * 1.04, (this.posY + this.altura/2) * 0.71, 0, 28, fonteConteudo);
-		this.Linha2 = new Texto(textoLinha2, this.posX * 1.04, (this.posY + this.altura/2) * 0.82, 0, 28, fonteConteudo);
-		this.Linha3 = new Texto(textoLinha3, this.posX * 1.04, (this.posY + this.altura/2) * 0.93, 0, 28, fonteConteudo);
+		this.Linha1 = new Texto(textoLinha1, this.posX * 1.04, (this.posY + this.altura/2) * 0.71, 0, 12, fonteConteudo);
+		this.Linha2 = new Texto(textoLinha2, this.posX * 1.04, (this.posY + this.altura/2) * 0.82, 0, 12, fonteConteudo);
+		this.Linha3 = new Texto(textoLinha3, this.posX * 1.04, (this.posY + this.altura/2) * 0.93, 0, 12, fonteConteudo);
 
 		// coordenadas usadas para o posicionamento do botão voltar. iguais à tela de Biodiversidade.
 		this.largura_voltar = width/5;
@@ -54,9 +54,6 @@ class CartaoAnimal {
 		this.exibirIcone((this.posX - this.largura/2) * 1.12, (this.posY + this.altura/2) * 0.93, "3");
 		this.exibirLinha(this.posX * 1.04, (this.posY + this.altura/2) * 0.93);
 		this.Linha3.exibir();
-		
-
-
 	}
 
 	exibirIcone(x, y, num){

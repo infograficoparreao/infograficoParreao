@@ -22,8 +22,8 @@ function setup(){
 	telaInicial = new TelaInicial(iconeContato, iconePassaro, iconeGMaps);
 	telaCategorias = new Categorias(iconeRepteis, iconeAves, iconeAnfibios, iconePreserv, iconeVoltar);
 	telaConstrucao = new TelaConstrucao(iconeConstrucao, iconeVoltar);
-	cartaoAve = new CartaoAnimal(iconeVoltar, '#57CCF2', galoCampina, 'Galo-de-campina', 'Linha 1', 'Linha 2', 'Linha 3');
-	cartaoReptil = new CartaoAnimal(iconeVoltar, '#E89F54', iguana, 'Iguana-verde', 'Linha 1', 'Linha 2', 'Linha 3');
-	cartaoAnfibio = new CartaoAnimal(iconeVoltar, '#5ADB6B', sapoBoi, 'Rhinella marina', 'Linha 1', 'Linha 2', 'Linha 3');
-	cartaoGato = new CartaoAnimal(iconeVoltar, '#BF2121', gato, 'Gatos e seus riscos', 'Linha 1', 'Linha 2', 'Linha 3');
+	cartaoAve = new CartaoAnimal(iconeVoltar, '#57CCF2', galoCampina, 'Galo-de-campina', texto1_ave, texto2_ave, texto3_ave);
+	cartaoReptil = new CartaoAnimal(iconeVoltar, '#E89F54', iguana, 'Iguana-verde', texto1_reptil, texto2_reptil, texto3_reptil);
+	cartaoAnfibio = new CartaoAnimal(iconeVoltar, '#5ADB6B', sapoBoi, 'Sapo-cururu', texto1_sapo, texto2_sapo, texto3_sapo);
+	cartaoGato = new CartaoAnimal(iconeVoltar, '#BF2121', gato, 'Gatos e seus riscos', texto1_gato, texto2_gato, texto3_gato);
 }
