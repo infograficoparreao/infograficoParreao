@@ -49,6 +49,15 @@ class Objetos {
 		}
 	}
 
+	interacaoHoverTexto(string){
+
+		let tituloBotao = new Texto(string, this.posX + this.raioLBase * 1.5, this.posY, 0, 20, fonteConteudoBold);
+
+		if(this.hoverMouse()){
+			tituloBotao.exibir();
+		}
+	}
+
 	interacaoExibirCartao(cartao){
 		if(this.hoverMouse()){
 			if(mouseIsPressed){

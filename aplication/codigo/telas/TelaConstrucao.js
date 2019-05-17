@@ -11,6 +11,8 @@ class TelaConstrucao {
 	}
 
 	exibir() {
+		background(255,140,48);
+
 		this.icone_construcao.exibir();
 		textFont(fonteTitulo);
 		textSize(50);

@@ -18,14 +18,17 @@ class TelaInicial{
 
 		background(255, 236, 174, 110);
 
+		this.botaoPassaro.interacaoHoverTexto("Categorias");
 		this.botaoPassaro.interacaoClicarMudarTela(EstadoTelaCategorias);
 		this.botaoPassaro.interacaoHoverEllipse();
 		this.botaoPassaro.exibir();
 
+		this.botaoContato.interacaoHoverTexto("Entre em\nContato");
 		this.botaoContato.interacaoClicarMudarTela(EstadoTelaContato);
 		this.botaoContato.interacaoHoverEllipse();
 		this.botaoContato.exibir();
 
+		this.botaoGMaps.interacaoHoverTexto("Como Chegar");
 		this.botaoGMaps.interacaoClicarMaps();
 		this.botaoGMaps.interacaoHoverEllipse();
 		this.botaoGMaps.exibir();
