@@ -8,12 +8,19 @@ var EstadoTelaCategorias = 2;
 var EstadoTelaContato = 3;
 var EstadoTelaPreservacao = 4;
 
+var CARTAO = 0;
+
+var EstadoCartaoAve = 1;
+var EstadoCartaoReptil = 2;
+var EstadoCartaoAnfibio = 3;
+var EstadoCartaoGato = 4;
+
 var alpha = 255;
 
 function draw(){
 	background(240);
-//	cartaoAnimal.exibirPreserv();
 	maquinaEstadoTelas();
+	maquinaEstadoCartao();
 }
 
 function maquinaEstadoTelas(){
@@ -45,6 +52,28 @@ function maquinaEstadoTelas(){
 		case EstadoTelaPreservacao:
 			cartaoAnimal.exibir();
 			break;
+	}
+}
+
+function maquinaEstadoCartao(){
+	if(TELA == EstadoTelaCategorias){
+		switch(CARTAO){
+			case EstadoCartaoAve:
+				cartaoAve.exibir();
+				break;
+			case EstadoCartaoReptil:
+				cartaoReptil.exibir();
+				break;
+			case EstadoCartaoAnfibio:
+				cartaoAnfibio.exibir();
+				break;
+			case EstadoCartaoGato:
+				cartaoGato.exibir();
+				break;
+		}
+	}
+	else{
+		CARTAO = 0;
 	}
 }
 

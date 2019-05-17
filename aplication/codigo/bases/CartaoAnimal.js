@@ -3,9 +3,9 @@ class CartaoAnimal {
 	constructor(imagemVoltar, corFundo, imagemCard, textoTitulo, textoLinha1, textoLinha2, textoLinha3){
 
 		//Variáveis de posicionamento
-		this.largura = width/3;
-		this.altura = height * 0.9;
-		this.posX = width/2;
+		this.altura = height * 0.8;
+		this.largura = height * 0.8 * 3/4;
+		this.posX = width/2 * 0.7;
 		this.posY = height/2;
 
 		//Variáveis de design
@@ -14,10 +14,10 @@ class CartaoAnimal {
 		this.Imagem = new Objetos(this.img, this.posX, this.posY * 0.78, this.largura * 0.9, this.largura * 0.9 * 3/4);
 
 		//Variaveis de informação
-		this.Titulo = new Texto(textoTitulo, this.posX, this.posY * 0.17, 0, 30, fonteTitulo);
-		this.Linha1 = new Texto(textoLinha1, this.posX * 1.04, this.posY * 1.38, 0, 28, fonteConteudo);
-		this.Linha2 = new Texto(textoLinha2, this.posX * 1.04, this.posY * 1.58, 0, 28, fonteConteudo);
-		this.Linha3 = new Texto(textoLinha3, this.posX * 1.04, this.posY * 1.78, 0, 28, fonteConteudo);
+		this.Titulo = new Texto(textoTitulo, this.posX, (this.posY - this.altura/2) * 1.4, 0, 30, fonteTitulo);
+		this.Linha1 = new Texto(textoLinha1, this.posX * 1.04, (this.posY + this.altura/2) * 0.71, 0, 28, fonteConteudo);
+		this.Linha2 = new Texto(textoLinha2, this.posX * 1.04, (this.posY + this.altura/2) * 0.82, 0, 28, fonteConteudo);
+		this.Linha3 = new Texto(textoLinha3, this.posX * 1.04, (this.posY + this.altura/2) * 0.93, 0, 28, fonteConteudo);
 
 		// coordenadas usadas para o posicionamento do botão voltar. iguais à tela de Biodiversidade.
 		this.largura_voltar = width/5;
@@ -34,25 +34,25 @@ class CartaoAnimal {
 		stroke(255, 255, 255, 75);
 		strokeWeight(3);
 		noFill();
-		rect(this.posX, this.posY * 0.18, 300, 50);
+		rect(this.posX, (this.posY - this.altura/2) * 1.4, this.largura * 0.9, this.altura * 0.08);
 		this.Titulo.exibir();
 
 		//Imagem
 		this.Imagem.exibir();
 
 		//Linhas
-		this.exibirIcone(this.posX * 0.72, this.posY * 1.38, "1");
-		this.exibirLinha(this.posX * 1.04, this.posY * 1.38);
+		this.exibirIcone((this.posX - this.largura/2) * 1.12, (this.posY + this.altura/2) * 0.71, "1");
+		this.exibirLinha(this.posX * 1.04, (this.posY + this.altura/2) * 0.71);
 		this.Linha1.exibir();
 
 		//Linhas
-		this.exibirIcone(this.posX * 0.72, this.posY * 1.58, "2");
-		this.exibirLinha(this.posX * 1.04, this.posY * 1.58);
+		this.exibirIcone((this.posX - this.largura/2) * 1.12, (this.posY + this.altura/2) * 0.82, "2");
+		this.exibirLinha(this.posX * 1.04, (this.posY + this.altura/2) * 0.82);
 		this.Linha2.exibir();
 
 		//Linhas
-		this.exibirIcone(this.posX * 0.72, this.posY * 1.78, "3");
-		this.exibirLinha(this.posX * 1.04, this.posY * 1.78);
+		this.exibirIcone((this.posX - this.largura/2) * 1.12, (this.posY + this.altura/2) * 0.93, "3");
+		this.exibirLinha(this.posX * 1.04, (this.posY + this.altura/2) * 0.93);
 		this.Linha3.exibir();
 		
 

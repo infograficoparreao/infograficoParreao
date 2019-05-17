@@ -1,47 +1,40 @@
 class Categorias{
 
-	constructor(imagemRepteis, imagemAves, imagemAnfibios, imagemVoltar){
-		this.largura = width/5;
-		this.posX = width/6;
+	constructor(imagemRepteis, imagemAves, imagemAnfibios, imagemPerserv, imagemVoltar){
+		this.largura = width/14;
 		this.posY = height/2;
 
-		this.repteis = new Objetos(imagemRepteis, this.posX, this.posY * 1.1, this.largura, this.largura);
-		this.aves = new Objetos(imagemAves, 3 * this.posX, this.posY * 1.1, this.largura, this.largura);
-		this.anfibios = new Objetos(imagemAnfibios, 5 * this.posX, this.posY * 1.1, this.largura, this.largura);
-		this.voltar = new Objetos(imagemVoltar, this.largura/4, height - this.largura/4, this.largura/4, this.largura/4);
+		this.repteis = new Objetos(imagemRepteis, this.largura * 1.3, this.posY - 2 * this.largura, this.largura, this.largura);
+		this.aves = new Objetos(imagemAves, this.largura * 1.3, this.posY - 0.7 * this.largura, this.largura, this.largura);
+		this.anfibios = new Objetos(imagemAnfibios, this.largura * 1.3, this.posY + 0.7 * this.largura, this.largura, this.largura);
+		this.preservacao = new Objetos(imagemPerserv, this.largura * 1.3, this.posY + 2 * this.largura, this.largura, this.largura);
+
+		this.voltar = new Objetos(imagemVoltar, this.largura/2, height - this.largura/2, this.largura/2, this.largura/2);
 	}
 
 	exibir(){
 
-		// Textos da Tela:
-		fill(0);
-		textFont(fonteTitulo);
-		textSize(50);
-		text('Biodiversidade', 3 * this.posX, this.posY/8);
-
-		textSize(35);
-		text('Répteis', this.posX, this.posY/3);
-
-		textSize(35);
-		text('Aves', 3 * this.posX, this.posY/3);
-
-		textSize(35);
-		text('Anfíbios', 5 * this.posX, this.posY/3);
-
+		this.repteis.interacaoExibirCartao(EstadoCartaoReptil);
 		this.repteis.interacaoHoverEllipse();
 		this.repteis.exibir();
 
+		this.aves.interacaoExibirCartao(EstadoCartaoAve);
 		this.aves.interacaoHoverEllipse();
 		this.aves.exibir();
 
+		this.anfibios.interacaoExibirCartao(EstadoCartaoAnfibio);
 		this.anfibios.interacaoHoverEllipse();
 		this.anfibios.exibir();
+
+		this.preservacao.interacaoExibirCartao(EstadoCartaoGato);
+		this.preservacao.interacaoHoverEllipse();
+		this.preservacao.exibir();
 
 		this.voltar.interacaoClicarMudarTela(EstadoTelaInicial);
 		this.voltar.interacaoHoverEllipse();
 		this.voltar.exibir();
 
-		if(this.repteis.hover || this.aves.hover || this.anfibios.hover || this.voltar.hover){
+		if(this.repteis.hover || this.aves.hover || this.anfibios.hover || this.voltar.hover || this.preservacao.hover){
 			cursor(HAND);
 		}
 		else{

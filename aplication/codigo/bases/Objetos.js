@@ -49,6 +49,14 @@ class Objetos {
 		}
 	}
 
+	interacaoExibirCartao(cartao){
+		if(this.hoverMouse()){
+			if(mouseIsPressed){
+				CARTAO = cartao;
+			}
+		}
+	}
+
 	exibir(){
 		image(this.imagem, this.posX, this.posY, this.raioA, this.raioL);
 	}
