@@ -15,7 +15,7 @@ var EstadoCartaoReptil = 2;
 var EstadoCartaoAnfibio = 3;
 var EstadoCartaoGato = 4;
 
-var alpha = 255;
+var alpha = 0;
 
 function draw(){
 	background(240);
@@ -26,6 +26,25 @@ function draw(){
 function maquinaEstadoTelas(){
 	switch(TELA){
 		case EstadoSplashs:
+			if(tempoSplash <= 90){
+				telaSpash.exibir();
+				alpha = 0;
+			} else if(tempoSplash > 90 && tempoSplash <= 120){
+				telaSpash.exibir();
+				alpha += 8;
+			} else if(tempoSplash > 120 && tempoSplash <= 180) {
+				telaSpash2.exibir();
+				alpha = 0;
+			} else if(tempoSplash > 180 && tempoSplash <= 210) {
+				telaSpash2.exibir();
+				alpha += 8;
+			}
+			else {
+				TELA = EstadoTelaInicial;
+			}
+
+			fill(240, 240, 240, alpha);
+			rect(width/2, height/2, width, height);
 
 			noStroke();
 			fill(87, 204, 242, 40);
@@ -35,18 +54,6 @@ function maquinaEstadoTelas(){
 			textSize(15);
 			text("Carregando...", width/2,  height * 0.9);
 
-			if(tempoSplash <= 180){
-				telaSpash.exibir();
-			} else if(tempoSplash > 180 && tempoSplash <= 225){
-				transicao(alpha);
-			} else if(tempoSplash > 225 && tempoSplash <= 405) {
-				telaSpash2.exibir();
-			} else if(tempoSplash > 405 && tempoSplash <= 450) {
-				transicao(alpha);
-			}
-			else {
-				TELA = EstadoTelaInicial;
-			}
 			tempoSplash++;
 			break;
 		case EstadoTelaInicial:
@@ -84,13 +91,4 @@ function maquinaEstadoCartao(){
 	else{
 		CARTAO = 0;
 	}
-}
-
-function transicao() {
-	if(alpha>=1) {
-		fill(240, alpha);
-		rect(0, 0, width, height);
-		alpha -= 1;
-	}
-
 }
